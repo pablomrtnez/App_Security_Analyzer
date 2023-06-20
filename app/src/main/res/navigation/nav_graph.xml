@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.appsecurityanalyzer.window.FirstWindow"
+        android:label="App Security Analyzer"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstWindow_to_SecondWindow"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.appsecurityanalyzer.window.SecondWindow"
+        android:label="Applications Installed"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondWindow_to_ThirdWindow"
+            app:destination="@id/ThirdFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument
+                android:name="appName"
+                app:argType="string" />
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ThirdFragment"
+        android:name="com.example.appsecurityanalyzer.window.ThirdWindow"
+        android:label="Application Details">
+
+        <action
+            android:id="@+id/action_ThirdWindow_to_SecondWindow"
+            app:destination="@id/SecondFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/AboutFragment"
+        android:name="com.example.appsecurityanalyzer.activity.AboutActivity"
+        android:label="About"
+        tools:layout="@layout/about_activity" />
+
+</navigation>

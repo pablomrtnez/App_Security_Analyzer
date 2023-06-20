@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">App Security Analyzer</string>
+    <string name="action_about">About</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="third_fragment_label">ThirdWindow</string>
+    <string name="analyze">Analyze apps</string>
+    <string name="text">Check how secure register and login process are for your installed apps</string>
+    <string name="image">Image main window</string>
+    <string name="image2">Default image</string>
+    <string name="app_list">App list</string>
+    <string name="previous_button">Previous</string>
+    <string name="next_button">Next</string>
+    <string name="btn_next">Next</string>
+    <string name="details">Details</string>
+    <string name="app_details">App Security:</string>
+    <string name="filter_by_name">Filter by name:</string>
+    <string name="desc_second_window">Pulsar sobre la app que se desee para ver detalles</string>
+    <string name="search_edit_text_description">Escribir para filtrar apps</string>
+    <string name="title_activity_mactivity">MActivity</string>
+    <string name="settings">This mobile application has been developed in collaboration with Universidad Politécnica de Madrid as a final project for the master degree in Cybersecurity.</string>
+    <string name="show_n_a">Show N/A</string>
+    <string name="upm_logo">UPM logo</string>
+</resources>
